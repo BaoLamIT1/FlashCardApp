@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="menu">#FFFFFF</color>
+    <color name="line_menu">#D9D9D9</color>
+    <color name="blue">#E6EEF4</color>
+    <color name="blue_1">#EDEFEF</color>
+    <color name="gray">#ADADAD</color>
+    <color name="gray_blue">#323639</color>
+    <color name="complete">#C1F2C6</color>
+    <color name="onprogress">#FFC0C0</color>
+    <color name="desk">#FEF6AD</color>
+    <color name="gray_line">#CACACA</color>
+    <color name="color_font">#5A616C</color>
+    <color name="color_button">#545F71</color>
+    <color name="color_dialog">#B2DEF6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="see_all">#545454</color>
+    <color name="list_desk">#E6EEF4</color>
+    <color name="btn_user_fragment">#F5F5F5</color>
+    <color name="background_edit">#C4C4C4</color>
+    <color name="red">#F45F5F</color>
+    <color name="bord_0">#FB6D2F</color>
+    <color name="bord_1">#73CA71</color>
+    <color name="word_category">#409FBD</color>
+    <color name="background_back">#EEF1F4</color>
+    <color name="create_new">#6C7076</color>
+    <color name="multiplechoice_bluepastel">#F3EEEA</color>
+    <color name="correctColor">#669854</color>
+    <color name="incorrectColor">#BF4A4A</color>
+
+</resources>

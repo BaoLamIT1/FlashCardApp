@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DictionaryFragment"
+    style="@style/SCREEN">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:fontFamily="@font/inter_semibold"
+        android:layout_marginTop="40dp"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_dictionary"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:iconifiedByDefault="false"
+        style="@style/BORDER"
+        android:queryHint="Search..."         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_Desk_Search"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="240dp"
+        />
+</FrameLayout>

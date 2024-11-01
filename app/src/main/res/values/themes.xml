@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FlashCat" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.FlashCat" parent="Base.Theme.FlashCat" />
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="Theme.FlashCat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FlashCat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FlashCat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.FlashCat.Fullscreen" parent="Theme.FlashCat">
+        <item name="android:actionBarStyle">@style/Widget.Theme.FlashCat.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.FlashCat.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+    <style name="DialogAnima">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <!-- Light mode -->
+    <!-- Screen background if light mode on -->
+    <style name="SCREEN">
+        <item name="android:background">#F4FBFC</item>
+    </style>
+    <!-- Dialog background if light mode on -->
+    <style name="DIALOG">
+        <item name="android:background">@drawable/dialog</item>
+    </style>
+    <!-- Desk dialog background if light mode on -->
+    <style name="DESK_DIALOG">
+        <item name="android:background">@drawable/background_dialog_desk</item>
+    </style>
+    <!-- Text background if light mode on -->
+    <style name="TEXT">
+        <item name="android:textColor">#000</item>
+    </style>
+    <!-- Button background if light mode on -->
+    <style name="BUTTON">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- Desk background if light mode on -->
+    <style name="DESK">
+        <item name="android:background">@drawable/border_desk</item>
+    </style>
+    <!-- Border background if light mode on -->
+    <style name="BORDER">
+        <item name="android:background">@drawable/bord_flashcard</item>
+    </style>
+    <!-- Border background if light mode on -->
+    <style name="BORDER_TERM">
+        <item name="android:background">@drawable/bord_term</item>
+    </style>
+    <!-- BORDER_DESK_DIALOG background if light mode on -->
+    <style name="BORDER_DESK_DIALOG">
+        <item name="android:background">@drawable/border_desk_dialog</item>
+    </style>
+    <!-- Button setting background if light mode on -->
+    <style name="BUTTON_SETTING">
+        <item name="android:backgroundTint">#FFF</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:drawableEnd">@drawable/ic_chevron_right_24</item>
+    </style>
+    <!-- Button result background if light mode on -->
+    <style name="BUTTON_PRACTICE">
+        <item name="android:textColor">@color/color_font</item>
+        <item name="android:drawableLeft">@drawable/practise</item>
+    </style>
+    <!-- Save button background if light mode on -->
+    <style name="SAVE">
+        <item name="android:backgroundTint">#FFF</item>
+        <item name="android:textColor">@color/color_font</item>
+    </style>
+    <!-- ADD button background if light mode on -->
+    <style name="ICON">
+        <item name="android:tint">#000</item>
+    </style>
+    <!-- MATCH button background if light mode on -->
+    <style name="MATCH">
+        <item name="android:textColor">@color/color_font</item>
+    </style>
+    <!-- Update Profile button background if light mode on -->
+    <style name="BUTTON_BIG">
+        <item name="android:backgroundTint">#343B47</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- Text word background if light mode on -->
+    <style name="WORD">
+        <item name="android:textColor">@color/color_font</item>
+    </style>
+    <!-- Button user background if dark mode on -->
+    <style name="BUTTON_USER">
+        <item name="android:backgroundTint">#FFF</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:drawableEnd">@drawable/baseline_arrow_right_24</item>
+    </style>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Activity.Practice.TrueFalseActivity">
+
+    <AbsoluteLayout
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_close_multiple_choice"
+            style="@style/ICON"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="close"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/txt_number_multiple_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2/16"
+            android:textSize="27sp" />
+
+    </AbsoluteLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="#F3EEEA"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#F3EEEA"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <TextView
+            android:id="@+id/txt_term"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Sakura"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/txt_definition"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="The flower of the cherry blossom tree"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_true"
+        style="@style/BUTTON_BIG"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="115dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/true_"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_false"
+        style="@style/BUTTON_BIG"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="115dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/false_"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

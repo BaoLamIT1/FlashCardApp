@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Vùng ngoài trắng -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+    <!-- Hình tròn với viền đen -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dp" android:color="@android:color/black"/> <!-- Viền đen -->
+        </shape>
+    </item>
+</layer-list>

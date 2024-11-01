@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Activity.Practice.PracticeActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbarPractice"
+        style="@style/SCREEN"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/inter_semibold"
+        android:minHeight="?attr/actionBarSize"
+        android:textSize="25sp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="@color/black">
+
+        <ImageButton
+            android:id="@+id/back_practice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/practice"
+            android:textSize="27sp" />
+
+    </FrameLayout>
+
+    <Spinner
+        android:id="@+id/sp_select_desk"
+        style="@style/BORDER"
+        android:layout_width="336dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPractice" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/question"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_total_questions"
+            style="@style/BORDER"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/answer"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/sp_select_answer_method"
+            style="@style/BORDER"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:entries="@array/answer_method_arrays"
+            android:gravity="center"
+            android:prompt="@string/answer_method_prompt" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/line_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_true_false"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="@string/true_false"
+            android:textSize="20sp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_multiple_choice"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="@string/multiple"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_match"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="@string/match"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_practice_startTest"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="704dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/border"
+        android:text="@string/start_test"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/color_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Desk.CreateFlashcardActivity"
+    style="@style/SCREEN">
+    <LinearLayout
+        android:id="@+id/toolbar_NewFlashcard"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        tools:layout_editor_absoluteX="132dp">
+
+        <ImageButton
+            android:id="@+id/back_creteFlashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            style="@style/ICON"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="@string/create_new"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/action_done_new_flashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/SAVE"
+            android:backgroundTint="@color/transparent"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/color_font"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_select_desk"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_NewFlashcard"
+        app:layout_constraintVertical_bias="0.246">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/front"
+            android:textColor="@color/color_font"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="15dp"
+            style="@style/BORDER"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="8dp">
+
+            <EditText
+                android:id="@+id/ed_front_flashcard"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="Type here" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_NewFlashcard"
+        app:layout_constraintVertical_bias="0.748">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/back"
+            android:textColor="@color/color_font"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45px"
+            android:layout_marginRight="15dp"
+            style="@style/BORDER"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+            tools:layout_editor_absoluteX="8dp">
+
+            <EditText
+                android:id="@+id/ed_back_flashcard"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="Type here" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

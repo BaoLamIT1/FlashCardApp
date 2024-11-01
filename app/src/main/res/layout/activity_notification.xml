@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Activity.SettingUser.NotificationActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_Notification"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        tools:layout_editor_absoluteX="132dp">
+
+        <ImageButton
+            android:id="@+id/back_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/back"
+            style="@style/ICON"
+            android:contentDescription="@string/back"/>
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="58dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="@string/notification"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_notification_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/save"
+            android:textColor="@color/color_font"
+            android:textSize="20sp"
+            style="@style/SAVE"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_word_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="@string/word"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Desks to remind"
+        android:textSize="18sp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_Notification"
+        app:layout_constraintVertical_bias="0.409"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/sp_select_desk_remind"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_Notification"
+        app:layout_constraintVertical_bias="0.535"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/start"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_select_timeStart"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableEnd="@drawable/clock"
+            android:gravity="left|center_vertical"
+            android:text="09 : 42"
+            android:textColor="@color/color_font"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/finish"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_select_timeFinish"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableEnd="@drawable/clock"
+            android:gravity="left|center_vertical"
+            android:text="09 : 42"
+            android:textColor="@color/color_font"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

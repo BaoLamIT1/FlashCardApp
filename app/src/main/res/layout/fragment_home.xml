@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_vertical"
+                android:text="@string/Hi"
+                android:textSize="26sp"
+                style="@style/TEXT"/>
+
+            <TextView
+                android:id="@+id/txtName"
+                style="@style/TEXT"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="@string/app_name"
+                android:textSize="26sp" />
+
+            <ImageButton
+                android:id="@+id/btn_Notification_Home"
+                style="@style/ICON"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="300dp"
+                android:backgroundTint="@color/transparent"
+                android:contentDescription="@string/notification"
+                android:src="@drawable/notification" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchDesk"
+            android:layout_width="354dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="110dp"
+            style="@style/BORDER"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="232dp"
+            android:fontFamily="@font/inter"
+            android:gravity="bottom"
+            android:text="@string/see_all"
+            android:textColor="@color/see_all"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/TEXT"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lst_desk"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="310dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

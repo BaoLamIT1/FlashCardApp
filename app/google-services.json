@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "474889571659",
+    "firebase_url": "https://android-database-81941-default-rtdb.firebaseio.com",
+    "project_id": "android-database-81941",
+    "storage_bucket": "android-database-81941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474889571659:android:78c2ca16ff25c99dddecce",
+        "android_client_info": {
+          "package_name": "com.example.btlandroid_nhom4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxnPKlbmnSXiQsJ5eRRZ1UfPAt7uviwCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474889571659:android:30a55dec8f168deaddecce",
+        "android_client_info": {
+          "package_name": "com.example.flashcat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxnPKlbmnSXiQsJ5eRRZ1UfPAt7uviwCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

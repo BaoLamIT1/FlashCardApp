@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Activity.Desk.DeskActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_Desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/back_desk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/back"
+            style="@style/ICON"
+            android:contentDescription="@string/back"/>
+        <TextView
+            android:id="@+id/txt_NameDesk_selected"
+            android:layout_width="295dp"
+            android:layout_height="58dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="@string/desk_name"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/action_more_desk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:showAsAction="always"
+            android:background="@color/transparent"
+            android:fontFamily="@font/inter_semibold"
+            android:contentDescription="@string/more"
+            android:src="@drawable/more"
+            android:textColor="@color/color_font"
+            android:textSize="20sp"
+            style="@style/ICON"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout_desk"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="364dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/term"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="345dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="412dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_flashcard_desk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

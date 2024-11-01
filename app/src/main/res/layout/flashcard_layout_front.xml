@@ -1,0 +1,26 @@
+<!-- flash_card_layout_front.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_volume_term"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/volum2"
+        android:contentDescription="@string/term"/>
+    <TextView
+        android:id="@+id/term_flashcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/term"
+        android:fontFamily="@font/inter"
+        android:textSize="30sp"/>
+
+
+</LinearLayout>

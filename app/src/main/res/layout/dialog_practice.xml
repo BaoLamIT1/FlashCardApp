@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/DIALOG">
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/line_menu"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:id="@+id/btn_Practice"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/practice"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:text="@string/practice"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/btn_Test"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/test"
+        android:gravity="left|center_vertical"
+        android:text="@string/test"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+
+        />
+</LinearLayout>

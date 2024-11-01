@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_Home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_Practice"
+        android:icon="@drawable/practice"
+        android:title="Practice" />
+    <item
+        android:id="@+id/menu_Add"
+        android:icon="@drawable/add"
+        android:title=""
+        />
+    <item
+        android:id="@+id/menu_Dictionary"
+        android:icon="@drawable/dictionary"
+        android:title="Dictionary" />
+    <item
+        android:id="@+id/menu_User"
+        android:icon="@drawable/user"
+        android:title="User" />
+</menu>

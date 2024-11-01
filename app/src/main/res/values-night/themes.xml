@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Flashcat" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Dark mode -->
+    <!-- Screen background if dark mode on -->
+    <style name="SCREEN">
+        <item name="android:background">#252525</item>
+    </style>
+    <!-- Dialog background if dark mode on -->
+    <style name="DIALOG">
+        <item name="android:background">@drawable/dialog_dark</item>
+    </style>
+    <!-- Desk dialog background if dark mode on -->
+    <style name="DESK_DIALOG">
+        <item name="android:background">@drawable/background_dialog_desk_dark</item>
+    </style>
+    <!-- Text background if dark mode on -->
+    <style name="TEXT">
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+    <!-- Button background if dark mode on -->
+    <style name="BUTTON">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!-- Desk background if dark mode on -->
+    <style name="DESK">
+        <item name="android:background">@drawable/border_desk_dark</item>
+    </style>
+    <!-- Border background if dark mode on -->
+    <style name="BORDER">
+        <item name="android:background">@drawable/bord_flashcard_dark</item>
+    </style>
+    <!-- Border background if dark mode on -->
+    <style name="BORDER_TERM">
+        <item name="android:background">@drawable/bord_term_dark</item>
+    </style>
+    <!-- BORDER_DESK_DIALOG background if light mode on -->
+    <style name="BORDER_DESK_DIALOG">
+        <item name="android:background">@drawable/border_desk_dialog_dark</item>
+    </style>
+    <!-- Button setting background if dark mode on -->
+    <style name="BUTTON_SETTING">
+        <item name="android:backgroundTint">#252525</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:drawableEnd">@drawable/ic_chevron_right_24_dark</item>
+    </style>
+    <!-- Button result background if dark mode on -->
+    <style name="BUTTON_PRACTICE">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:drawableLeft">@drawable/practise</item>
+        <item name="android:tint">#FFF</item>
+    </style>
+    <!-- Button setting background if dark mode on -->
+    <style name="TEXT_SETTING">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!-- Save button background if dark mode on -->
+    <style name="SAVE">
+        <item name="android:backgroundTint">#252525</item>
+        <item name="android:textColor">#BFBDBD</item>
+    </style>
+    <!-- ICON button background if dark mode on -->
+    <style name="ICON">
+        <item name="android:tint">#FFF</item>
+    </style>
+    <!-- MATCH button background if dark mode on -->
+    <style name="MATCH">
+        <item name="android:textColor">#BBC2CC</item>
+    </style>
+    <!-- Update Profile button background if dark mode on -->
+    <style name="BUTTON_BIG">
+        <item name="android:backgroundTint">#5F6B80</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- Text word background if dark mode on -->
+    <style name="WORD">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!-- Button user background if dark mode on -->
+    <style name="BUTTON_USER">
+        <item name="android:backgroundTint">#252525</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:drawableEnd">@drawable/baseline_arrow_right_24_dark</item>
+    </style>
+
+</resources>

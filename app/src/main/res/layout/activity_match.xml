@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Activity.Practice.MatchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_end_match"
+                style="@style/ICON"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/transparent"
+                android:contentDescription="close"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:id="@+id/txt_time_Match"
+                android:layout_width="316dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="time"
+                android:text="01:15"
+                android:textSize="27sp" />
+
+            <ImageButton
+                android:id="@+id/btn_am_thanh"
+                style="@style/ICON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/transparent"
+                android:contentDescription="volume"
+                android:src="@drawable/volume" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_end_match">
+
+            <TextView
+                android:id="@+id/txt_match_card1"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card2"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card3"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card4"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card5"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card6"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card7"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card8"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card9"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+
+            <TextView
+                android:id="@+id/txt_match_card10"
+                android:visibility="gone"
+                style="@style/TermDefinitionTextView"
+                android:layout_columnWeight="1"
+                android:text="Card" />
+        </GridLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

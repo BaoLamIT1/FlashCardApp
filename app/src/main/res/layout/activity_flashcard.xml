@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Desk.FlashcardActivity"
+    style="@style/SCREEN">
+
+    <LinearLayout
+        android:id="@+id/toolbar_Flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/back_flashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/back"
+            style="@style/ICON"
+            android:contentDescription="@string/back"/>
+        <TextView
+            android:id="@+id/txt_number_flashcard"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="1/16"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="37dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_lose"
+            android:layout_width="37dp"
+            android:layout_height="43dp"
+            android:background="@drawable/bord_0"
+            android:gravity="center"
+            android:text="@string/lose"
+            android:textColor="@color/bord_0"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="37dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_win"
+            android:layout_width="37dp"
+            android:layout_height="43dp"
+            android:background="@drawable/bord_1"
+            android:gravity="center"
+            android:text="@string/lose"
+            android:textColor="@color/bord_1"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lose"
+        android:layout_width="20dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="49dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Flashcard">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item_flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_win"
+        android:layout_width="20dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="49dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Flashcard">
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_return_flashcard"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="712dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/return_flashcard"
+        android:src="@drawable/return_flashcard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ICON"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

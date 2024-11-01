@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login.SignupActivity"
+    android:background="@drawable/linear_color_signup">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginTop="237dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.032"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" >-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="18dp"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/first_name"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_first_name"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:hint="@string/first_name"/>-->
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldFirst"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="237dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/first_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="25dp"-->
+    <!--        android:layout_marginTop="237dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.8"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="18dp"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/last_name"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_last_name"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:hint="@string/last_name"/>-->
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldLast"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="237dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/last_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="323dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="33dp"-->
+    <!--        android:layout_marginTop="311dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.032"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/email"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_email"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:hint="@string/email"-->
+    <!--            android:inputType="textEmailAddress"/>-->
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldEmail"
+        android:layout_width="323dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_email_singup"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="323dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="33dp"-->
+    <!--        android:layout_marginTop="387dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.032"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/user_name"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_username"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:hint="@string/user_name"/>-->
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldUser"
+        android:layout_width="323dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="385dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/user_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="323dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="33dp"-->
+    <!--        android:layout_marginTop="464dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.032"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/password"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_password"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:hint="@string/password"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:drawableEnd="@drawable/view"/>-->
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldPasswordSign"
+        android:layout_width="323dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="461dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_password_signup"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="323dp"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_marginStart="33dp"-->
+    <!--        android:layout_marginTop="545dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.032"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:text="@string/retype_password"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/ed_retype_password"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_gravity="left|top"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:fontFamily="@font/open_sans_semibold"-->
+    <!--            android:hint="@string/retype_password"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:drawableEnd="@drawable/view"/>-->
+
+    <!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/filledTextFieldRetypePw"
+        android:layout_width="323dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="539dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:hint="@string/retype_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:errorEnabled="true"
+            android:backgroundTint="@color/transparent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="598dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/register"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="760dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/already"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:onClick="onSignInClick"
+            android:paddingLeft="10px"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

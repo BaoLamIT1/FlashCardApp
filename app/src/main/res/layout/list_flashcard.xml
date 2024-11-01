@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN">
+
+
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easy_flip_flashcard"
+        android:layout_width="345dp"
+        android:layout_height="457dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        style="@style/BORDER"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="front"
+        app:flipOnTouch="false"
+        app:flipType="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Back Layout Goes Here -->
+
+        <include
+            layout="@layout/flashcard_layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!-- Front Layout Goes Here -->
+        <include
+            layout="@layout/flashcard_layout_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+</androidx.constraintlayout.widget.ConstraintLayout>
